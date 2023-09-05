@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AnimationController, MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-registro',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroPage implements OnInit {
 
-  constructor() { }
+  constructor(private animationCtrl: AnimationController, public menuCtrl: MenuController) { }
 
   ngOnInit() {
   }
 
+  ionViewWillEnter(){
+    this.menuCtrl.enable(false);
+  }
 }
