@@ -74,9 +74,17 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /* Jobbys */
+  --ion-color-jobbys: rgb(0,255,255);
+	--ion-color-jobbys-rgb: NaN,0,255;
+	--ion-color-jobbys-contrast: #ffffff;
+	--ion-color-jobbys-contrast-rgb: 255,255,255;
+	--ion-color-jobbys-shade: #NaN00e0;
+	--ion-color-jobbys-tint: #NaN1aff;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: jobbys) {
   /*
    * Dark Colors
    * -------------------------------------------
@@ -145,6 +153,13 @@
     --ion-color-light-contrast-rgb: 255,255,255;
     --ion-color-light-shade: #1e2023;
     --ion-color-light-tint: #383a3e;
+
+    --ion-color-jobbys: rgb(0,255,255);
+    --ion-color-jobbys-rgb: NaN,0,255;
+    --ion-color-jobbys-contrast: #ffffff;
+    --ion-color-jobbys-contrast-rgb: 255,255,255;
+    --ion-color-jobbys-shade: #NaN00e0;
+    --ion-color-jobbys-tint: #NaN1aff;
   }
 
   /*
