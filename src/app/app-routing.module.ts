@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'recuperar-contrasena',
     loadChildren: () => import('./recuperar-contrasena/recuperar-contrasena.module').then( m => m.RecuperarContrasenaPageModule)
+  },
+  {
+    path: 'asistencia',
+    loadChildren: () => import('./asistencia/asistencia.module').then( m => m.AsistenciaPageModule)
   }
 ];
 

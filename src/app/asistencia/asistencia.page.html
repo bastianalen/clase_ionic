@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="custom-title">
+      <img class="duoc-logo" src="../assets/icon/Logo-DUOC-transparente.png" alt="Duoc UC Logo">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<p class="custom-text">
+  Bienvenido a la página de inicio de Duoc UC. Aprende y crece con nosotros.
+</p>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>
+            Registro de Asistencias
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-label position="floating">Nombre del Estudiante</ion-label>
+      <ion-input [(ngModel)]="nombreEstudiante"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Asistencia</ion-label>
+      <ion-toggle [(ngModel)]="asistencia"></ion-toggle>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="registrarAsistencia()">Registrar Asistencia</ion-button>
+  <ion-list>
+    <ion-item *ngFor="let registro of registrosAsistencias">
+      <ion-label>{{ registro.nombreEstudiante }}</ion-label>
+      <ion-badge slot="end">{{ registro.asistencia ? 'Presente' : 'Ausente' }}</ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  <p>Página de Inicio de Duoc UC &copy; 2023</p>
+</ion-footer>
