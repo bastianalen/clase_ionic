@@ -12,7 +12,7 @@ ion-content {
   
   /* Estilos para el título */
   ion-title {
-    font-size: 24px;
+    font-size: medium;
     font-weight: bold;
   }
   
@@ -54,4 +54,7 @@ ion-content {
     text-align: center;
     padding: 8px 0;
   }
-  
+
+.titulo_asistencia {
+  text-align: center;
+}
